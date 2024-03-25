@@ -2660,14 +2660,14 @@ input[type="radio"]+label:before {
 }
 
 .profile-image {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .profile-image img {
-  width: 280px;
-  height: 280px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   object-position: 0px 10%;
@@ -3697,7 +3697,6 @@ body.landing #header {
   max-width: 95%;
   padding: 6em;
   position: relative;
-  text-align: right;
   vertical-align: middle;
   z-index: 1;
 }
@@ -3747,7 +3746,9 @@ body.is-touch #banner {
   max-width: 64rem;
   margin: 0 auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-contact {
@@ -3755,15 +3756,19 @@ body.is-touch #banner {
   flex-direction: column;
 }
 
-.footer-contact .text, .footer-social .text {
+.footer-contact .text,
+.footer-social .text {
   font-weight: bold;
 }
 
 .footer-social {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+
+.footer-social .text {
+  margin-left: 0;
 }
 
 #footer .icons .icon.alt {
@@ -3981,10 +3986,6 @@ body.is-touch #banner {
 
   #footer {
     padding: 4.5em 0;
-  }
-
-  .footer-social {
-    flex-direction: row;
   }
 }
 
